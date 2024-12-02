@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNest - E-Commerce</title>
+  <link rel="stylesheet" href="Styles/WebDev Project.css">
+</head>
+<body>
+  <header>
+    <h1>Tech<b id="bold">Nest</b></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+      <div>
+        <input type="text" id="search-bar" placeholder="Search products..."> 
+        <button>Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Page -->
+    <section id="home">
+      <h2>Featured Products</h2>
+      <figure>
+        <img src="Image/Macbook.jpg" width="385px">
+        <figcaption>Apple Macbook Laptop Pro
+            <div>Price: $1200</div>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="Image/Iphone X.jpg" width="385px">
+        <figcaption>Iphone X
+            <div>Price: $800</div>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="Image/Earbuds.jpg" width="385px">
+        <figcaption>Earbuds
+            <div>Price: $150</div>
+        </figcaption>
+      </figure>
+      <div class="product-cards">
+        <!-- Placeholder for dynamic product cards -->
+      </div>
+      
+    </section>
+
+    <!-- Product Page -->
+    <section id="products" class="hidden">
+      <h2>All Products</h2>
+      <div class="filters">
+        <select id="filter-category">
+          <option value="all">All Categories</option>
+          <option value="laptops">Laptops</option>
+          <option value="phones">Phones</option>
+          <option value="accessories">Accessories</option>
+        </select>
+        <select id="sort-by">
+          <option value="price">Sort by Price</option>
+          <option value="popularity">Sort by Popularity</option>
+        </select>
+      </div>
+      <div class="product-grid">
+        <!-- Placeholder for dynamic product grid -->
+      </div>
+
+      <img src="Image/Macbook.jpg" width="385px">
+      <img src="Image/Iphone X.jpg" width="385px">
+      <img src="Image/Earbuds.jpg" width="385px">
+    </section>
+
+    <!-- Product Details Page -->
+    <section id="product-details" class="hidden">
+      <button id="back-to-products">Back to Products</button>
+      <div id="product-info">
+        <!-- Placeholder for dynamic product details -->
+      </div>
+    </section>
+
+    <!-- Cart Page -->
+    <section id="cart" class="hidden">
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Placeholder for cart items -->
+      </div>
+      <div id="cart-summary">
+        <p>Total: $<span id="total-cost">0.00</span></p>
+        <button id="checkout-button">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 TechNest</p>
+  </footer>
+
+  <script src="JS/WebDev Project.js"></script>
+</body>
+</html>
